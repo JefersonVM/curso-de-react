@@ -1,14 +1,12 @@
 import "./App.css";
-import Evento from "./components/Evento";
-import Form from "./components/Form";
+import OutraLista from "./components/OutraLista";
 
 function App() {
+  const meusItens =  [];
   return (
     <div className="App">
-      <h1>Testando eventos</h1>
-      <Evento numero={1} />
-      <Evento numero={2} />
-      <Form />
+      <h1>Renderização de listas</h1>
+      <OutraLista itens={meusItens}/>
     </div>
   );
 }
